@@ -14,30 +14,68 @@
 
     .row:nth-child(odd) {
       background-color: #eee;
-      border-radius: 10px;
+
     }
 
     .row {
       font-size: 16pt;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       margin: 10px;
-      padding: 20px;
+      /* padding: 20px; */
+      border: 1px solid #aaa;
+      border-radius: 20px;
     }
 
     .flag {
       text-shadow: 0 0 20px white, 0 0 20px white, 0 0 10px white, 0 0 10px white, 0 0 10px white, 0 0 10px white;
-      /* margin-right: 50px; */
     }
 
     .hdr {
       display: grid;
-      grid-template-columns: auto 1fr;
+      grid-template-columns: auto auto;
+      align-items: start;
+      /* background-color: #efefef; */
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      padding: 10px;
     }
+
+    .footer {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding: 10px 20px;
+      list-style-type: none;
+      display: grid;
+
+    }
+
+    .footer.c2 {
+      grid-template-columns: [c1] 1fr [c2] 1fr;
+    }
+
+    .footer.c2 .c21{
+      grid-column: c1;
+    }
+    .footer.c2 .c22{
+      grid-column: c2;
+    }
+
 
     h3 {
       margin: 0;
       padding: 0;
       text-align: right;
+    }
+
+    .href1 {
+      display: inline-block;
+      color: blue;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin-top: 5px;
+      border-radius: 10px;
+      background-color: white;
+      border: 1px solid #aaa;
     }
   </style>
 </head>
@@ -58,16 +96,18 @@
       <div class="flag">🚨🚨🚨</div>
       <h3>Единый номер вызова<br />экстренных оперативных служб</h3>
     </div>
-    <br />
-    <ul>
-      <li>Любые аварийные и чрезвычайные ситуации;</li>
-      <li>Отключение электроэнергии, водоснабжения и газоснабжения;</li>
-      <li>Правонарушения;</li>
-      <li>Обнаружение БПЛА;</li>
-      <li>Информация о состоянии понтонных переправ в с. Троица и в с. Фатьяновка.</li>
+    <div class="body">
+      <ul>
+        <li>Любые аварийные и чрезвычайные ситуации;</li>
+        <li>Отключение электроэнергии, водоснабжения и газоснабжения;</li>
+        <li>Правонарушения;</li>
+        <li>Обнаружение БПЛА;</li>
+        <li>Информация о состоянии понтонных переправ в с. Троица и в с. Фатьяновка.</li>
+      </ul>
+    </div>
+    <ul class="footer">
+      <li><a href="tel:+112" class="href1">☎️ 112</a></li>
     </ul>
-    <br />
-    <div><a href="tel:+112">☎️ 112</a></div>
   </div>
 
   <div class="row">
@@ -76,8 +116,9 @@
       <div class="flag">🏣</div>
       <h3>Администрация Панинского сельского поселения</h3>
     </div>
-    <br />
-    <div><a href="tel:+74913537321">☎️ +7 (49135) 3-73-21</a></div>
+    <ul class="footer">
+      <li><a href="tel:+74913537321" class="href1">☎️ +7 (49135) 3-73-21</a></li>
+    </ul>
   </div>
 
   <div class="row">
@@ -86,46 +127,64 @@
       <div class="flag">⚡</div>
       <h3>Рязанская энергетическая сбытовая компания<br />Спасск-Рязанский</h3>
     </div>
-    <div>РЭСК</div>
-    <br />
-    <div><a href="tel:+74913533378">☎️ +7 (49135) 3-33-78</a></div>
+    <div class="body">РЭСК</div>
+    <ul class="footer">
+      <li><a href="tel:+74913533378" class="href1">☎️ +7 (49135) 3-33-78</a></li>
+    </ul>
   </div>
+
   <div class="row">
-    <div class="flag"></div>
-    <h3>Газпром Межрегионгаз Спасск-Рязанский</h3>
-    <div><a href="tel:+74913533649">☎️ +7 (49135) 3-36-49</a></div>
+    <div class="hdr">
+      <div class="flag"></div>
+      <h3>Газпром Межрегионгаз Спасск-Рязанский</h3>
+    </div>
+    <ul class="footer">
+      <li><a href="tel:+74913533649" class="href1">☎️ +7 (49135) 3-36-49</a></li>
+    </ul>
   </div>
+
   <div class="row">
-    <div class="flag">🚰</div>
-    <h3>Стройдеталь Спасск-Рязанский</h3>
+    <div class="hdr">
+      <div class="flag">🚰</div>
+      <h3>Стройдеталь Спасск-Рязанский</h3>
+    </div>
     <i>(УК по водоснабжению)</i>
 
-    <div><a href="tel:+74913534172">☎️ +7 (49135) 3-41-72</a></div>
+    <ul class="footer">
+      <li><a href="tel:+74913534172" class="href1">☎️ +7 (49135) 3-41-72</a></li>
+    </ul>
   </div>
 
   <div class="row">
-    <div class="flag">🗑️</div>
-    <h3>ЭКО-Пронск Рязань</h3>
+    <div class="hdr">
+      <div class="flag">🗑️</div>
+      <h3>ЭКО-Пронск Рязань</h3>
+    </div>
     <i>(вывоз мусора, ТБО)</i>
-
-    <div><a href="tel:+74912701950">☎️ +7 (4912) 70-19-50</a></div>
+    <ul class="footer">
+      <li><a href="tel:+74912701950" class="href1">☎️ +7 (4912) 70-19-50</a></li>
+    </ul>
   </div>
 
   <div class="row">
-    <div class="flag">🛜</div>
-    <h3>Наш Интернет</h3>
-    <i>(интернет-провайдер)</i>
-
-    <div><a href="tel:88005518797">☎️ 8 (800) 551-87-97</a></div>
-    <div><a href="tel:+74912701950">☎️ +7 (4912) 70-19-50</a></div>
-
-    Телеграм: https://t.me/corenet62 - оперативная информация
-    Телеграм: https://t.me/CoreNett - чат поддержки
+    <div class="hdr">
+      <div class="flag">🛜</div>
+      <h3>Наш Интернет</h3>
+      <i>(интернет-провайдер)</i>
+    </div>
+    <ul class="footer c2">
+      <li class="c21"><a href="tel:88005518797" class="href1">☎️ 8 (800) 551-87-97</a></li>
+      <li class="c22"><a href="https://t.me/corenet62" class="href1">Телеграм: оперативная информация</a></li>
+      <li class="c21"><a href="tel:+74912701950" class="href1">☎️ +7 (4912) 70-19-50</a></li>
+      <li class="c22"><a href="https://t.me/CoreNett" class="href1">Телеграм: чат поддержки</a></li>
+    </ul>
   </div>
 
   <div class="row">
-    <div class="flag">🐱🐶🐹</div>
-    <h3>Спасская районная ветеринарная станция</h3>
+    <div class="hdr">
+      <div class="flag">🐱🐶🐹</div>
+      <h3>Спасская районная ветеринарная станция</h3>
+    </div>
 
     <div><a href="tel:+74913533291">☎️ +7 (49135) 3-32-91</a></div>
 
@@ -133,8 +192,10 @@
   </div>
 
   <div class="row">
-    <div class="flag">🌳🌲</div>
-    <h3>Спасское лесничество</h3>
+    <div class="hdr">
+      <div class="flag">🌳🌲</div>
+      <h3>Спасское лесничество</h3>
+    </div>
 
     <div><a href="tel:+74913533285">☎️ +7 (49135) 3-32-85</a></div>
 
@@ -142,8 +203,10 @@
   </div>
 
   <div class="row">
-    <div class="flag">🏥</div>
-    <h3>Спасская районная больница</h3>
+    <div class="hdr">
+      <div class="flag">🏥</div>
+      <h3>Спасская районная больница</h3>
+    </div>
 
     <div><a href="tel:+74913533362">☎️ +7 (49135) 3-33-62</a></div>
 
@@ -151,8 +214,10 @@
   </div>
 
   <div class="row">
-    <div class="flag">🏛️</div>
-    <h3>Панинский СДК</h3>
+    <div class="hdr">
+      <div class="flag">🏛️</div>
+      <h3>Панинский СДК</h3>
+    </div>
 
     _Руководитель: Яковенко Галина Серафимовна_
 
@@ -191,8 +256,10 @@
   </div>
 
   <div class="row">
-    <div class="flag">🔥🔥🌲🔥 🌳🔥🔥</div>
-    <h3>Увидели ПОЖАР В ЛЕСУ ?!?!</h3>
+    <div class="hdr">
+      <div class="flag">🔥🔥🌲🔥 🌳🔥🔥</div>
+      <h3>Увидели ПОЖАР В ЛЕСУ ?!?!</h3>
+    </div>
 
     _Служба спасения_
     <div><a href="tel:">☎️ 112</a></div>
@@ -205,8 +272,10 @@
   </div>
 
   <div class="row">
-    <div class="flag">✉️</div>
-    <h3>Отделение почтовой связи</h3>
+    <div class="hdr">
+      <div class="flag">✉️</div>
+      <h3>Отделение почтовой связи</h3>
+    </div>
     *Панино № 391081*
 
     Адрес: _обл. Рязанская, р-н Спасский, с. Панино, ул. Красная, дом 18_
@@ -225,8 +294,10 @@
   </div>
 
   <div class="row">
-    <div class="flag">🚌 🚐</div>
-    <h3>Расписание маршруток</h3>
+    <div class="hdr">
+      <div class="flag">🚌 🚐</div>
+      <h3>Расписание маршруток</h3>
+    </div>
     _(Панино 🡘 Спасск)_
 
     ▪️ _Понедельник_
@@ -253,8 +324,10 @@
   </div>
 
   <div class="row">
-    <div class="flag">👩🏼‍⚕️</div>
-    <h3>Панинский фельдшерско-акушерский пункт (ФАП)</h3>
+    <div class="hdr">
+      <div class="flag">👩🏼‍⚕️</div>
+      <h3>Панинский фельдшерско-акушерский пункт (ФАП)</h3>
+    </div>
     ГБУ РО "СПАССКАЯ ЦРБ"
 
     👩🏼‍⚕️ Лысикова Дарья Юрьевна
@@ -272,15 +345,19 @@
   </div>
 
   <div class="row">
-    <div class="flag">🌉🌁</div>
-    <h3>Наплывные мосты Спасского района</h3>
+    <div class="hdr">
+      <div class="flag">🌉🌁</div>
+      <h3>Наплывные мосты Спасского района</h3>
+    </div>
 
     Телеграм: https://t.me/spasskiemosty
   </div>
 
   <div class="row">
-    <div class="flag">🎫🚌🎫🚐</div>
-    <h3>Билеты на автобус</h3>
+    <div class="hdr">
+      <div class="flag">🎫🚌🎫🚐</div>
+      <h3>Билеты на автобус</h3>
+    </div>
 
     Сайт: https://autovokzal62.ru
 
@@ -292,8 +369,10 @@
   </div>
 
   <div class="row">
-    <div class="flag">🚌💨 ... 🚗🚶🏃 ... 🧍🚐💨 ... </div>
-    <h3>Отправления транспорта</h3>
+    <div class="hdr">
+      <div class="flag">🚌💨 ... 🚗🚶🏃 ... 🧍🚐💨 ... </div>
+      <h3>Отправления транспорта</h3>
+    </div>
     *от Автовокзала (г.Спасск) до Рязани*
 
     _Л_ - льготный
