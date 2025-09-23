@@ -53,10 +53,11 @@
       grid-template-columns: [c1] 1fr [c2] 1fr;
     }
 
-    .footer.c2 .c21{
+    .footer.c2 .c21 {
       grid-column: c1;
     }
-    .footer.c2 .c22{
+
+    .footer.c2 .c22 {
       grid-column: c2;
     }
 
@@ -67,7 +68,9 @@
       text-align: right;
     }
 
-    .href1 {
+    .href1,
+    .href2,
+    .href3 {
       display: inline-block;
       color: blue;
       text-decoration: none;
@@ -76,6 +79,17 @@
       border-radius: 10px;
       background-color: white;
       border: 1px solid #aaa;
+    }
+
+    .href2 {
+      color: white;
+      background-color: rgb(0, 110, 255);
+      border-color: white;
+    }
+    .href3 {
+      color: white;
+      background-color: blue;
+      border-color: white;
     }
   </style>
 </head>
@@ -174,9 +188,9 @@
     </div>
     <ul class="footer c2">
       <li class="c21"><a href="tel:88005518797" class="href1">☎️ 8 (800) 551-87-97</a></li>
-      <li class="c22"><a href="https://t.me/corenet62" class="href1">Телеграм: оперативная информация</a></li>
+      <li class="c22"><a href="https://t.me/corenet62" class="href2"><b>Телеграм:</b> <u>оперативная информация</u></a></li>
       <li class="c21"><a href="tel:+74912701950" class="href1">☎️ +7 (4912) 70-19-50</a></li>
-      <li class="c22"><a href="https://t.me/CoreNett" class="href1">Телеграм: чат поддержки</a></li>
+      <li class="c22"><a href="https://t.me/CoreNett" class="href2"><b>Телеграм:</b> <u>чат поддержки</u></a></li>
     </ul>
   </div>
 
@@ -185,10 +199,11 @@
       <div class="flag">🐱🐶🐹</div>
       <h3>Спасская районная ветеринарная станция</h3>
     </div>
+    <ul class="footer c2">
+      <li><a href="tel:+74913533291" class="href1">☎️ +7 (49135) 3-32-91</a></li>
+      <li><a href="https://vk.com/club204644793" class="href3" ><b>ВК</b>онтакте</a></li>
+    </ul>
 
-    <div><a href="tel:+74913533291">☎️ +7 (49135) 3-32-91</a></div>
-
-    ВКонтакте: https://vk.com/club204644793
   </div>
 
   <div class="row">
