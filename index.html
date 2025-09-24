@@ -54,22 +54,25 @@
       border-bottom-right-radius: 20px;
       padding: 10px 20px;
       list-style-type: none;
-      display: grid;
+      
 
     }
 
     /* .footer.c2 { */
     .c2 {
+      display: grid;
       grid-template-columns: [c1] 1fr [c2] 1fr;
+      list-style-type: none;
+      align-items: center;
     }
 
     /* .footer.c2 .c21 { */
-    .c2 .c21 {
+    .c21 {
       grid-column: c1;
     }
 
     /* .footer.c2 .c22 { */
-    .c2 .c22 {
+    .c22 {
       grid-column: c2;
     }
 
@@ -335,9 +338,7 @@
           <td colspan="3">---</td>
         </tr>
       </table>
-
     </div>
-    
   </div>
 
   <div class="row">
@@ -346,11 +347,13 @@
       <h3>Увидели ПОЖАР В ЛЕСУ ?!?!</h3>
     </div>
 
-    _Служба спасения_
-    <div><a href="tel:">☎️ 112</a></div>
+    <ul class="body c2">
+      <li class="c21"><a href="tel:+112" class="href1">☎️ 112</a></li>
+      <li class="c22">Служба спасения</li>
+      <li class="c21"><a href="tel:88001009400" class="href1">☎️ 8 (800) 100-94-00</a></li>
+      <li class="c22">Россельхоз | Прямая линия лесной охраны</li>
+    </ul>
 
-    _Россельхоз | Прямая линия лесной охраны_
-    <div><a href="tel:88001009400">☎️ 8 (800) 100-94-00</a></div>
 
     _ГАУ РО «Пожлес» | Региональная диспетчерская служба лесного хозяйства (РДС)_
     <div><a href="tel:+74912287959">☎️ +7 (4912) 28-79-59</a></div>
