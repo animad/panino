@@ -8,6 +8,15 @@
   <meta name="description" content="" />
   <meta name="author" content="animad1@yandex.ru" />
   <style type="text/css">
+    body {
+      font-size: 20pt;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .body {
+      padding: 0 20px;
+    }
+
     .row:nth-child(even) {
       background-color: white;
     }
@@ -18,8 +27,8 @@
     }
 
     .row {
-      font-size: 16pt;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      /* font-size: 16pt;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; */
       margin: 10px;
       /* padding: 20px; */
       border: 1px solid #aaa;
@@ -49,15 +58,18 @@
 
     }
 
-    .footer.c2 {
+    /* .footer.c2 { */
+    .c2 {
       grid-template-columns: [c1] 1fr [c2] 1fr;
     }
 
-    .footer.c2 .c21 {
+    /* .footer.c2 .c21 { */
+    .c2 .c21 {
       grid-column: c1;
     }
 
-    .footer.c2 .c22 {
+    /* .footer.c2 .c22 { */
+    .c2 .c22 {
       grid-column: c2;
     }
 
@@ -71,7 +83,7 @@
     .href1,
     .href2,
     .href3 {
-      font-size: 26pt;
+      font-size: 20pt;
       display: inline-block;
       color: blue;
       text-decoration: none;
@@ -92,6 +104,27 @@
       color: white;
       background-color: blue;
       border-color: white;
+    }
+
+    .table1 {
+      margin: 0 auto;
+    }
+
+    .table1 th {
+      text-align: left;
+    }
+
+    .table1 tr:nth-child(odd) {
+      background-color: #efefef;
+    }
+
+    .table1 th,
+    .table1 td {
+      padding: 10px;
+    }
+
+    .table1 caption {
+      margin: 5px 0 20px 0;
     }
   </style>
 </head>
@@ -236,41 +269,75 @@
       <div class="flag">🏛️</div>
       <h3>Панинский СДК</h3>
     </div>
+    <div class="body">
+      <i>Руководитель: Яковенко Галина Серафимовна</i>
+    </div>
+    <ul class="footer c2">
+      <li><a href="tel:+79209838489" class="href1 c21">☎️ +7 (920) 983-84-89</a></li>
+      <li><a href="https://vk.com/sdk1panino" class="href3"><b>ВК</b>онтакте</a></li>
+    </ul>
 
-    _Руководитель: Яковенко Галина Серафимовна_
+    <div class="body">
+      <table class="table1">
+        <caption>Режим работы</caption>
+        <tr>
+          <th>Понедельник</th>
+          <td>--</td>
+        </tr>
+        <tr>
+          <th>Вторник, среда, четверг</th>
+          <td>11:00 - 16:00</td>
+        </tr>
+        <tr>
+          <th>Пятница, суббота</th>
+          <td>17:00 - 21:00</td>
+        </tr>
+        <tr>
+          <th>Воскресенье</th>
+          <td>12:00 - 15:00</td>
+        </tr>
+      </table>
 
-    <div><a href="tel:+79209838489">☎️ +7 (920) 983-84-89</a></div>
+    </div>
+    <br />
+  </div>
 
-    ВКонтакте: https://vk.com/sdk1panino
+  <div class=" row">
+    <div class="hdr">
+      <div class="flag">📚</div>
+      <h3>Панинская сельская библиотека</h3>
+    </div>
+    <div class="body">
+      <div style="text-align: center;"><i>Последний день каждого месяца - <b>санитарный</b></i></div>
 
-    Режим работы:
+      <table class="table1">
+        <tr>
+          <th>Понедельник</th>
+          <td colspan="3">---</td>
+        </tr>
 
-    ~Понедельник~
+        <tr>
+          <th>Вторник, среда</th>
+          <td>09:00 - 12:00</td>
+          <td>...</td>
+          <td>14:00 - 17:00</td>
+        </tr>
 
-    ▪️ Вторник, среда, четверг
-    > 11:00 - 16:00
+        <tr>
+          <th>Четверг, пятница, суббота</th>
+          <td>09:00 - 12:00</td>
+          <td>...</td>
+          <td>14:00 - 16:00</td>
+        </tr>
 
-    ▪️ Пятница, суббота
-    > 17:00 - 21:00
+        <tr>
+          <th>Воскресенье</th>
+          <td colspan="3">---</td>
+        </tr>
+      </table>
 
-    ▪️ Воскресенье
-    > 12:00 - 15:00
-    [28.08, 09:29] Animad Zone: 📚
-    *Панинская сельская библиотека*
-
-    ▪️ ~Понедельник~
-
-    ▪️ Вторник, среда
-    > 09:00 - 12:00
-    > 14:00 - 17:00
-
-    ▪️ Четверг, пятница, суббота
-    > 09:00 - 12:00
-    > 14:00 - 16:00
-
-    ▪️ ~Воскресенье~
-
-    _Последний день каждого месяца - *санитарный*_
+    </div>
+    
   </div>
 
   <div class="row">
