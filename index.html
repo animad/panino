@@ -9,11 +9,16 @@
   <meta name="author" content="animad1@yandex.ru" />
   <style type="text/css">
     body {
-      font-size: 20pt;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
+      gap: 20px;
+    }
+
+    body,
+    body * {
+      font-size: 1.17em;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .row:nth-child(even) {
@@ -27,9 +32,8 @@
     }
 
     .row {
-      /* font-size: 16pt;
-      font-family: Verdana, Geneva, Tahoma, sans-serif; */
-      margin: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      */ margin: 10px;
       padding: 20px;
       border: 1px solid #aaa;
       border-radius: 20px;
@@ -40,10 +44,17 @@
     }
 
     .hdr {
-      display: grid;
+      /* display: grid;
       grid-template-columns: auto;
       align-items: start;
-      /* background-color: #efefef; */
+      background-color: #efefef; */
+
+      display: flex;
+      gap: 20px;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
       margin-bottom: 20px;
@@ -132,6 +143,7 @@
     .table1 tr:nth-child(odd) {
       background-color: #efefef;
     }
+
     .table1 tr:nth-child(even) {
       background-color: white;
     }
@@ -396,60 +408,60 @@
       <h3>Расписание маршруток</h3>
     </div>
     <div class="body">
-    _(Панино 🡘 Спасск)_
+      _(Панино 🡘 Спасск)_
 
-    <table class="table1">
-      <thead>
+      <table class="table1">
+        <thead>
+          <tr>
+            <th>День</th>
+            <th>из ПАНИНО</th>
+            <th>из СПАССКА</th>
+            <th></th>
+          </tr>
+        </thead>
         <tr>
-          <th>День</th>
-          <th>из ПАНИНО</th>
-          <th>из СПАССКА</th>
-          <th></th>
+          <th>Понедельник</th>
+          <td>08:45</td>
+          <td>13:00</td>
+          <td>Магнит, у больницы</td>
         </tr>
-      </thead>
-      <tr>
-        <th>Понедельник</th>
-        <td>08:45</td>
-        <td>13:00</td>
-        <td>Магнит, у больницы</td>
-      </tr>
-      <tr>
-        <th>Вторник</th>
-        <td>07:45</td>
-        <td>13:25</td>
-        <td>автовокзал</td>
-      </tr>
-      <tr>
-        <th>Среда</th>
-        <td>08:45</td>
-        <td>13:00</td>
-        <td>Магнит, у больницы</td>
-      </tr>
-      <tr>
-        <th>Четверг</th>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>Пятница</th>
-        <td>07:45</td>
-        <td>13:25</td>
-        <td>автовокзал</td>
-      </tr>
-      <tr>
-        <th>Суббота</th>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>Воскресенье</th>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
+        <tr>
+          <th>Вторник</th>
+          <td>07:45</td>
+          <td>13:25</td>
+          <td>автовокзал</td>
+        </tr>
+        <tr>
+          <th>Среда</th>
+          <td>08:45</td>
+          <td>13:00</td>
+          <td>Магнит, у больницы</td>
+        </tr>
+        <tr>
+          <th>Четверг</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Пятница</th>
+          <td>07:45</td>
+          <td>13:25</td>
+          <td>автовокзал</td>
+        </tr>
+        <tr>
+          <th>Суббота</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Воскресенье</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
     </div>
   </div>
 
