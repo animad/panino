@@ -44,16 +44,10 @@
     }
 
     .hdr {
-      /* display: grid;
-      grid-template-columns: auto;
-      align-items: start;
-      background-color: #efefef; */
-
       display: flex;
       gap: 20px;
       flex-direction: row-reverse;
       justify-content: space-between;
-
 
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
@@ -94,10 +88,11 @@
     }
 
 
-    h3 {
+    h3, .title {
       margin: 0;
       padding: 0;
       /* text-align: right; */
+      font-weight: bold;
     }
 
     .href1,
@@ -166,7 +161,7 @@
     <a name="emargency" />
     <div class="hdr">
       <div class="flag">🚨🚨🚨</div>
-      <h3>Единый&nbsp;номер&nbsp;вызова экстренных&nbsp;оперативных&nbsp;служб</h3>
+      <div class="title">Единый&nbsp;номер&nbsp;вызова экстренных&nbsp;оперативных&nbsp;служб</div>
     </div>
     <div class="body">
       <ul>
@@ -186,7 +181,7 @@
     <a name="administration" />
     <div class="hdr">
       <div class="flag">🏣</div>
-      <h3>Администрация Панинского сельского поселения</h3>
+      <div class="title">Администрация Панинского сельского поселения</div>
     </div>
     <ul class="footer">
       <li><a href="tel:+74913537321" class="href1">☎️ +7 (49135) 3-73-21</a></li>
@@ -197,7 +192,7 @@
     <a name="resk" />
     <div class="hdr">
       <div class="flag">⚡</div>
-      <h3>Рязанская энергетическая сбытовая компания Спасск-Рязанский</h3>
+      <div class="title">Рязанская энергетическая сбытовая компания Спасск-Рязанский</div>
     </div>
     <div class="body">РЭСК</div>
     <ul class="footer">
@@ -208,7 +203,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag"></div>
-      <h3>Газпром Межрегионгаз Спасск-Рязанский</h3>
+      <div class="title">Газпром Межрегионгаз Спасск-Рязанский</div>
     </div>
     <ul class="footer">
       <li><a href="tel:+74913533649" class="href1">☎️ +7 (49135) 3-36-49</a></li>
@@ -218,7 +213,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag">🚰</div>
-      <h3>Стройдеталь Спасск-Рязанский</h3>
+      <div class="title">Стройдеталь Спасск-Рязанский</div>
     </div>
     <div class="body">(УК по водоснабжению)</div>
 
@@ -230,7 +225,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag">🗑️</div>
-      <h3>ЭКО-Пронск Рязань</h3>
+      <div class="title">ЭКО-Пронск Рязань</div>
     </div>
     <div class="body">(вывоз мусора, ТБО)</div>
     <ul class="footer">
@@ -241,7 +236,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag">🛜</div>
-      <h3>Наш Интернет</h3>
+      <div class="title">Наш Интернет</div>
     </div>
     <div class="body">(интернет-провайдер)</div>
     <ul class="footer">
@@ -255,7 +250,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag">🐱🐶🐹</div>
-      <h3>Спасская районная ветеринарная станция</h3>
+      <div class="title">Спасская районная ветеринарная станция</div>
     </div>
     <ul class="footer">
       <li><a href="tel:+74913533291" class="href1">☎️ +7 (49135) 3-32-91</a></li>
@@ -267,7 +262,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag">🌳🌲</div>
-      <h3>Спасское лесничество</h3>
+      <div class="title">Спасское лесничество</div>
     </div>
     <ul class="footer">
       <li><a href="tel:+74913533285" class="href1">☎️ +7 (49135) 3-32-85</a></li>
@@ -278,7 +273,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag">🏥</div>
-      <h3>Спасская районная больница</h3>
+      <div class="title">Спасская районная больница</div>
     </div>
     <ul class="footer">
       <li><a href="tel:+74913533362" class="href1">☎️ +7 (49135) 3-33-62</a></li>
@@ -289,7 +284,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag">🏛️</div>
-      <h3>Панинский СДК</h3>
+      <div class="title">Панинский СДК</div>
     </div>
     <div class="body">
       <div>Руководитель: <i>Яковенко Галина Серафимовна</i></div>
@@ -323,7 +318,7 @@
   <div class=" row">
     <div class="hdr">
       <div class="flag">📚</div>
-      <h3>Панинская сельская библиотека</h3>
+      <div class="title">Панинская сельская библиотека</div>
     </div>
     <div class="body">
       <table class="table1">
@@ -360,7 +355,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag">🔥🔥🌲🔥 🌳🔥🔥</div>
-      <h3>Увидели ПОЖАР В ЛЕСУ ?!?!</h3>
+      <div class="title">Увидели ПОЖАР В ЛЕСУ ?!?!</div>
     </div>
 
     <ul class="body">
@@ -376,7 +371,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag">✉️</div>
-      <h3>Отделение почтовой связи</h3>
+      <div class="title">Отделение почтовой связи</div>
     </div>
     <div class="body">
       <div>Село Панино: № 391081</div>
@@ -406,7 +401,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag">🚌 🚐</div>
-      <h3>Расписание маршруток</h3>
+      <div class="title">Расписание маршруток</div>
     </div>
     <div class="body">
       _(Панино 🡘 Спасск)_
@@ -469,7 +464,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag">👩🏼‍⚕️</div>
-      <h3>Панинский фельдшерско-акушерский пункт (ФАП)</h3>
+      <div class="title">Панинский фельдшерско-акушерский пункт (ФАП)</div>
     </div>
     ГБУ РО "СПАССКАЯ ЦРБ"
 
@@ -490,7 +485,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag">🌉🌁</div>
-      <h3>Наплывные мосты Спасского района</h3>
+      <div class="title">Наплывные мосты Спасского района</div>
     </div>
 
     Телеграм: https://t.me/spasskiemosty
@@ -499,7 +494,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag">🎫🚌🎫🚐</div>
-      <h3>Билеты на автобус</h3>
+      <div class="title">Билеты на автобус</div>
     </div>
 
     Сайт: https://autovokzal62.ru
@@ -514,7 +509,7 @@
   <div class="row">
     <div class="hdr">
       <div class="flag">🚌💨 ... 🚗🚶🏃 ... 🧍🚐💨 ... </div>
-      <h3>Отправления транспорта</h3>
+      <div class="title">Отправления транспорта</div>
     </div>
     *от Автовокзала (г.Спасск) до Рязани*
 
