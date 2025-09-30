@@ -11,10 +11,10 @@
     body {
       font-size: 20pt;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .body {
-      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-end;
     }
 
     .row:nth-child(even) {
@@ -30,7 +30,7 @@
       /* font-size: 16pt;
       font-family: Verdana, Geneva, Tahoma, sans-serif; */
       margin: 10px;
-      /* padding: 20px; */
+      padding: 20px;
       border: 1px solid #aaa;
       border-radius: 20px;
     }
@@ -41,21 +41,27 @@
 
     .hdr {
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: auto;
       align-items: start;
       /* background-color: #efefef; */
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
-      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .body {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
     }
 
     .footer {
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
-      padding: 10px 20px;
       list-style-type: none;
-      
-
+      /* padding: 20px; */
+      padding: 0;
+      margin: 0;
     }
 
     /* .footer.c2 { */
@@ -80,7 +86,7 @@
     h3 {
       margin: 0;
       padding: 0;
-      text-align: right;
+      /* text-align: right; */
     }
 
     .href1,
@@ -110,7 +116,7 @@
     }
 
     .table1 {
-      margin: 0 auto;
+      /* margin: 0 auto; */
     }
 
     .table1 th {
@@ -133,20 +139,12 @@
 </head>
 
 <body>
-  <div class="row">
-    <h2>Оглавление</h2>
-    <ul>
-      <li><a href="#emargency">Единый номер вызова экстренных оперативных служб</a></li>
-      <li><a href="#administration">Администрация Панинского сельского поселения</a></li>
-      <li><a href="#resk">Рязанская энергетическая сбытовая компания Спасск-Рязанский</a></li>
-    </ul>
-  </div>
 
   <div class="row">
     <a name="emargency" />
     <div class="hdr">
       <div class="flag">🚨🚨🚨</div>
-      <h3>Единый номер вызова<br />экстренных оперативных служб</h3>
+      <h3>Единый&nbsp;номер&nbsp;вызова экстренных&nbsp;оперативных&nbsp;служб</h3>
     </div>
     <div class="body">
       <ul>
@@ -177,7 +175,7 @@
     <a name="resk" />
     <div class="hdr">
       <div class="flag">⚡</div>
-      <h3>Рязанская энергетическая сбытовая компания<br />Спасск-Рязанский</h3>
+      <h3>Рязанская энергетическая сбытовая компания Спасск-Рязанский</h3>
     </div>
     <div class="body">РЭСК</div>
     <ul class="footer">
@@ -224,12 +222,11 @@
       <h3>Наш Интернет</h3>
       <i>(интернет-провайдер)</i>
     </div>
-    <ul class="footer c2">
-      <li class="c21"><a href="tel:88005518797" class="href1">☎️ 8 (800) 551-87-97</a></li>
-      <li class="c22"><a href="https://t.me/corenet62" class="href2"><b>Телеграм:</b> <u>оперативная информация</u></a>
-      </li>
-      <li class="c21"><a href="tel:+74912701950" class="href1">☎️ +7 (4912) 70-19-50</a></li>
-      <li class="c22"><a href="https://t.me/CoreNett" class="href2"><b>Телеграм:</b> <u>чат поддержки</u></a></li>
+    <ul class="footer">
+      <li><a href="tel:88005518797" class="href1">☎️ 8 (800) 551-87-97</a></li>
+      <li><a href="tel:+74912701950" class="href1">☎️ +7 (4912) 70-19-50</a></li>
+      <li><a href="https://t.me/CoreNett" class="href2"><b>Телеграм:</b> <u>чат поддержки</u></a></li>
+      <li><a href="https://t.me/corenet62" class="href2"><b>Телеграм:</b> <u>оперативная информация</u></a></li>
     </ul>
   </div>
 
@@ -238,7 +235,7 @@
       <div class="flag">🐱🐶🐹</div>
       <h3>Спасская районная ветеринарная станция</h3>
     </div>
-    <ul class="footer c2">
+    <ul class="footer">
       <li><a href="tel:+74913533291" class="href1">☎️ +7 (49135) 3-32-91</a></li>
       <li><a href="https://vk.com/club204644793" class="href3"><b>ВК</b>онтакте</a></li>
     </ul>
@@ -250,7 +247,7 @@
       <div class="flag">🌳🌲</div>
       <h3>Спасское лесничество</h3>
     </div>
-    <ul class="footer c2">
+    <ul class="footer">
       <li><a href="tel:+74913533285" class="href1">☎️ +7 (49135) 3-32-85</a></li>
       <li><a href="https://vk.com/club216959966" class="href3"><b>ВК</b>онтакте</a></li>
     </ul>
@@ -261,7 +258,7 @@
       <div class="flag">🏥</div>
       <h3>Спасская районная больница</h3>
     </div>
-    <ul class="footer c2">
+    <ul class="footer">
       <li><a href="tel:+74913533362" class="href1">☎️ +7 (49135) 3-33-62</a></li>
       <li><a href="https://vk.com/spassk_crb" class="href3"><b>ВК</b>онтакте</a></li>
     </ul>
@@ -275,7 +272,7 @@
     <div class="body">
       <i>Руководитель: Яковенко Галина Серафимовна</i>
     </div>
-    <ul class="footer c2">
+    <ul class="footer">
       <li><a href="tel:+79209838489" class="href1 c21">☎️ +7 (920) 983-84-89</a></li>
       <li><a href="https://vk.com/sdk1panino" class="href3"><b>ВК</b>онтакте</a></li>
     </ul>
@@ -347,16 +344,14 @@
       <h3>Увидели ПОЖАР В ЛЕСУ ?!?!</h3>
     </div>
 
-    <ul class="body c2">
-      <li class="c21"><a href="tel:+112" class="href1">☎️ 112</a></li>
-      <li class="c22">Служба спасения</li>
-      <li class="c21"><a href="tel:88001009400" class="href1">☎️ 8 (800) 100-94-00</a></li>
-      <li class="c22">Россельхоз | Прямая линия лесной охраны</li>
+    <ul class="body">
+      <li><a href="tel:+112" class="href1">☎️ 112</a> - Служба спасения</li>
+      <li><a href="tel:88001009400" class="href1">☎️ +7 (4912) 28-79-59</a> - Россельхоз | Прямая линия лесной охраны
+      </li>
+      <li><a href="tel:74912287959" class="href1">☎️ 8 (800) 100-94-00</a> - ГАУ РО «Пожлес» | Региональная
+        диспетчерская служба лесного хозяйства (РДС)</li>
     </ul>
 
-
-    _ГАУ РО «Пожлес» | Региональная диспетчерская служба лесного хозяйства (РДС)_
-    <div><a href="tel:+74912287959">☎️ +7 (4912) 28-79-59</a></div>
   </div>
 
   <div class="row">
@@ -364,12 +359,26 @@
       <div class="flag">✉️</div>
       <h3>Отделение почтовой связи</h3>
     </div>
-    *Панино № 391081*
+    <div class="body">
+      <div>Панино № 391081</div>
+      <div>Адрес: <i>обл. Рязанская, р-н Спасский, с. Панино, ул. Красная, дом 18</i></div>
+    </div>
 
-    Адрес: _обл. Рязанская, р-н Спасский, с. Панино, ул. Красная, дом 18_
 
-    Режим работы:
-
+    <table class="table1">
+      <caption>Режим работы</caption>
+      <tr>
+        <th>Понедельник, среда, пятница</th>
+        <td>09:00 - 10:00</td>
+        <td>...</td>
+        <td>16:00 - 17.30</td>
+      </tr>
+      <tr>
+        <th>Четверг</th>
+        <td>09:00 - 15:00</td>
+        <td colspan="2"></td>
+      </tr>
+    </table>
     ▪️ Понедельник, среда, пятница
     > 09:00 - 10:00
     > 16:00 - 17.30
@@ -377,8 +386,7 @@
     ▪️Четверг
     > 09:00 - 15:00
 
-    _Начальник ОПС_
-    <div><a href="tel:+79308838783">☎️ +7 (930) 883-87-83</a></div>
+    <div><a href="tel:+79308838783">☎️ +7 (930) 883-87-83</a> - Начальник ОПС</div>
   </div>
 
   <div class="row">
