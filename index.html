@@ -24,11 +24,11 @@
     .row:nth-child(even) {
       background-color: white;
       margin-left: 100px;
+      border-left-width: 10px;
     }
 
     .row:nth-child(odd) {
       background-color: #eee;
-
     }
 
     .row {
@@ -146,6 +146,15 @@
     .table1 caption {
       margin: 5px 0 20px 0;
     }
+
+    .l1{
+      display: block;
+      margin-left: 10px;
+    }
+    .l1::before{
+      content: '• ';
+      padding-left: 5px;
+    }
   </style>
 </head>
 
@@ -158,13 +167,11 @@
       <div class="title">Единый&nbsp;номер&nbsp;вызова экстренных&nbsp;оперативных&nbsp;служб</div>
     </div>
     <div class="body">
-      <ul>
-        <li>Любые аварийные и чрезвычайные ситуации;</li>
-        <li>Отключение электроэнергии, водоснабжения и газоснабжения;</li>
-        <li>Правонарушения;</li>
-        <li>Обнаружение БПЛА;</li>
-        <li>Информация о состоянии понтонных переправ в с. Троица и в с. Фатьяновка.</li>
-      </ul>
+        <div class="l1">Любые аварийные и чрезвычайные ситуации;</div>
+        <div class="l1">Отключение электроэнергии, водоснабжения и газоснабжения;</div>
+        <div class="l1">Правонарушения;</div>
+        <div class="l1">Обнаружение БПЛА;</div>
+        <div class="l1">Информация о состоянии понтонных переправ в с. Троица и в с. Фатьяновка.</div>
     </div>
     <div class="footer">
       <div><a href="tel:+112" class="href1">☎️ 112</a></div>
